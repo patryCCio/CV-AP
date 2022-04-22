@@ -3,5 +3,209 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.wrapper .header-container {
+  width: 100%;
+  background-color: #ddd;
+  height: 100vh;
+  position: relative;
+}
+
+.wrapper .header-container .top-header {
+  padding: 50px 60px 0 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .header-container .top-header .company-name {
+  font-size: 4em;
+  letter-spacing: 6px;
+}
+
+.wrapper .header-container .top-header .logo {
+  font-size: 4em;
+}
+
+.wrapper .header-container .center-header {
+  width: 100%;
+  margin-top: 30vh;
+}
+
+.wrapper .header-container .center-header .curiosity {
+  position: absolute;
+  right: 15vw;
+  -webkit-box-shadow: 0 0 2px 1px gray;
+          box-shadow: 0 0 2px 1px gray;
+  width: 35vw;
+  padding: 20px;
+  border-radius: 3px;
+}
+
+.wrapper .header-container .center-header .curiosity h3 {
+  margin-bottom: 20px;
+}
+
+.wrapper .header-container .center-header .curiosity .curiosity-content {
+  text-align: justify;
+  font-size: 0.9em;
+  line-height: 1.4em;
+}
+
+.wrapper .header-container .navbar-container {
+  width: 100%;
+  background-color: #888;
+  position: absolute;
+  bottom: 0;
+}
+
+.wrapper .header-container .navbar-container .navbar {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  background-color: #222;
+}
+
+.wrapper .header-container .navbar-container .navbar ul {
+  position: absolute;
+  bottom: 40px;
+  right: 15vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  background-color: lightgray;
+  width: 35vw;
+  height: 100%;
+}
+
+.wrapper .header-container .navbar-container .navbar ul .nav-li {
+  height: 80px;
+  line-height: 80px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.wrapper .header-container .navbar-container .navbar ul .nav-li:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.wrapper .aboutus, .wrapper .projects, .wrapper .opinions, .wrapper .contact {
+  width: 100%;
+}
+
+.wrapper .title-section-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.wrapper .title-section-container .first-box {
+  position: relative;
+  width: 20vw;
+  height: 60px;
+  background-color: gray;
+}
+
+.wrapper .title-section-container .first-box .title-box {
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  padding: 10px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 80%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: lightgray;
+}
+
+.wrapper .title-section-container .first-box .title-box h1 {
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+.wrapper .title-section-container .line-box {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 20px;
+  background-color: gray;
+}
+
+@media (max-width: 1024px) {
+  .wrapper .header-container .top-header .company-name {
+    font-size: 3em;
+    letter-spacing: 3px;
+  }
+  .wrapper .header-container .top-header .logo {
+    font-size: 3em;
+  }
+  .wrapper .header-container .center-header .curiosity {
+    width: 80vw;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  .wrapper .header-container .center-header .curiosity h3 {
+    font-size: 1.4em;
+  }
+  .wrapper .header-container .center-header .curiosity .curiosity-content {
+    font-size: 1em;
+  }
+  .wrapper .header-container .navbar-container .navbar ul {
+    bottom: 75px;
+    right: 50%;
+    width: 80vw;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  .wrapper .header-container .navbar-container .navbar ul .nav-li {
+    font-size: 0.8em;
+  }
+  .wrapper .title-section-container .first-box {
+    width: 30vw;
+  }
+  .wrapper .title-section-container .first-box .title-box h1 {
+    font-size: 1em;
+  }
+  .wrapper .title-section-container .line-box {
+    width: 70vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */
