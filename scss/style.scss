@@ -11,6 +11,16 @@ ul {
     padding: 0;
 }
 
+.main-container {
+    .aboutus {
+        .title-section-container {
+            margin-top: 0;
+        }
+    }
+}
+
+
+
 .wrapper {
     width: 100%;
     position: relative;
@@ -111,13 +121,86 @@ ul {
 
 
     // section settings
-    .aboutus, .projects, .opinions, .contact {
+    .aboutus,
+    .projects,
+    .opinions,
+    .contact {
         width: 100%;
     }
 
     //aboutus
-    .aboutus{
-        
+    .aboutus {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .card-box {
+                position: relative;
+                flex-basis: 80%;
+                margin: 200px 0 200px 0;
+                box-shadow: 0 0 3px 2px gray;
+                max-width: 500px;
+                padding-top: 100px;
+                text-align: center;
+
+                .card-avatar {
+                    position: absolute;
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    top: -100px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: gray;
+                }
+
+                .card-header {
+                    margin: 50px 0 30px 0;
+                    text-transform: uppercase;
+                }
+
+                .card-content {
+                    padding: 30px;
+                }
+
+                .card-footer {
+                    width: 100%;
+                    height: 80px;
+                    background-color: #ddd;
+
+                    .card-social-box {
+                        height: 100%;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+
+                        #social1 {
+                            height: 60px;
+                            width: 60px;
+                            border-radius: 50%;
+                            background-color: red;
+                            margin-left: 50px;
+                        }
+
+                        #social2 {
+                            height: 60px;
+                            width: 60px;
+                            border-radius: 50%;
+                            background-color: red;
+                            margin-right: 50px;
+                        }
+                    }
+
+                }
+            }
+
+        }
+
     }
 
     // projects
@@ -130,7 +213,9 @@ ul {
     .title-section-container {
         width: 100%;
         display: flex;
+        margin-top: 60px;
         margin-bottom: 60px;
+
         .first-box {
             position: relative;
             width: 20vw;
@@ -169,8 +254,6 @@ ul {
 
 }
 
-
-
 @media(max-width: 1024px) {
     .wrapper {
 
@@ -191,6 +274,7 @@ ul {
                     width: 80vw;
                     right: 50%;
                     transform: translateX(50%);
+
                     h3 {
                         font-size: 1.4em;
                     }
@@ -211,6 +295,7 @@ ul {
                         right: 50%;
                         width: 80vw;
                         transform: translateX(50%);
+
                         .nav-li {
                             font-size: 0.8em;
                         }
@@ -222,6 +307,9 @@ ul {
 
             }
         }
+
+
+        // title section
 
         .title-section-container {
             .first-box {
@@ -240,4 +328,126 @@ ul {
         }
     }
 
+}
+
+@media(min-width: 320px) and (max-width: 480px) {
+    .wrapper {
+        .header-container {
+            .top-header {
+                .company-name {
+                    color: yellow;
+                    font-size: 1.6em;
+                    letter-spacing: 3px;
+                }
+
+                .logo {
+                    font-size: 1.6em;
+                }
+            }
+
+            .center-header {
+                margin-top: 20vw;
+
+                .curiosity {
+                    position: absolute;
+                    right: 50%;
+                    transform: translateX(50%);
+                    width: 95vw;
+
+                    h3 {
+                        margin-bottom: 15px;
+                        font-size: 1em;
+                    }
+
+                    .curiosity-content {
+                        font-size: 0.8em;
+                        line-height: 1.6em;
+                    }
+
+                }
+            }
+
+            .navbar-container {
+
+                .navbar {
+
+                    ul {
+                        bottom: 75px;
+                        width: 100vw;
+
+                        .nav-li {
+                            text-align: center;
+                            flex-grow: 1;
+                            font-size: 0.8em;
+                        }
+
+                        .nav-li:hover {}
+                    }
+
+                }
+
+            }
+        }
+
+        .title-section-container {
+            .first-box {
+                width: 40vw;
+
+                .title-box {
+                    h1 {
+                        font-size: 1em;
+                    }
+                }
+            }
+
+            .line-box {
+                width: 60vw;
+            }
+        }
+    }
+}
+
+@media(min-width: 1025px) {
+    .wrapper {
+        .header-container {
+            .top-header {
+
+                .company-name {
+                    color: red;
+                    font-size: 4em;
+                    letter-spacing: 6px;
+                }
+
+                .logo {
+                    font-size: 4em;
+                }
+            }
+        }
+
+        .aboutus {
+            .cards {
+                justify-content: space-around;
+
+                .card-box {
+                    flex-basis: 40%;
+                    margin: 200px 0 100px 0;
+                    max-width: 600px;
+
+                    .card-avatar {
+                        width: 250px;
+                        height: 250px;
+                        top: -125px;
+                        left: 50%;
+                    }
+
+                    .card-header {}
+
+                    .card-content {}
+
+                    .card-footer {}
+                }
+
+            }
+        }
+    }
 }
