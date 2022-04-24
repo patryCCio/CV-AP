@@ -223,8 +223,9 @@ ul {
 }
 
 .wrapper .projects .project-container {
-  width: 90vw;
+  width: 75vw;
   margin: auto;
+  position: relative;
   border-radius: 10px;
   -webkit-box-shadow: 0 0 2px 1px gray;
           box-shadow: 0 0 2px 1px gray;
@@ -238,9 +239,27 @@ ul {
           flex-direction: column;
 }
 
+.wrapper .projects .project-container .left-arrow, .wrapper .projects .project-container .right-arrow {
+  position: absolute;
+  top: 30%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 40px;
+  font-weight: bold;
+  color: royalblue;
+}
+
+.wrapper .projects .project-container .left-arrow {
+  left: 0;
+}
+
+.wrapper .projects .project-container .right-arrow {
+  right: 0;
+}
+
 .wrapper .projects .project-container .img-container {
-  width: 80vw;
-  height: 80vw;
+  width: 90%;
+  height: 30vw;
   margin: auto;
   -webkit-box-shadow: 0 0 2px 1px gray;
           box-shadow: 0 0 2px 1px gray;
@@ -248,12 +267,11 @@ ul {
 }
 
 .wrapper .projects .project-container .content-container {
-  width: 80vw;
+  width: 90%;
   padding: 20px 15px;
   margin: auto;
   -webkit-box-shadow: 0 0 2px 1px gray;
           box-shadow: 0 0 2px 1px gray;
-  margin-bottom: 20px;
   text-align: justify;
 }
 
@@ -276,7 +294,22 @@ ul {
   margin-bottom: 10px;
 }
 
-.wrapper .projects .project-container .content-container .project-content button {
+.wrapper .projects .project-container .content-container .project-content .project-button-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.wrapper .projects .project-container .content-container .project-content .project-button-container button {
   width: 50vw;
   margin-left: auto;
   margin-right: auto;
@@ -460,9 +493,19 @@ ul {
   .wrapper .projects .project-name {
     font-size: 3em;
   }
+  .wrapper .projects .project-container .left-arrow, .wrapper .projects .project-container .right-arrow {
+    top: 50%;
+    font-size: 80px;
+  }
+  .wrapper .projects .project-container .left-arrow {
+    left: 10px;
+  }
+  .wrapper .projects .project-container .right-arrow {
+    right: 10px;
+  }
   .wrapper .projects .project-container .img-container {
-    width: 80vw;
-    height: 40vw;
+    width: 90%;
+    height: 20vw;
     margin-bottom: 0;
   }
   .wrapper .projects .project-container .content-container h2 {
@@ -473,10 +516,18 @@ ul {
     margin-bottom: 20px;
     font-size: 1.2em;
   }
-  .wrapper .projects .project-container .content-container .project-content button {
-    height: 25px;
-    margin-left: 0;
-    width: 25%;
+  .wrapper .projects .project-container .content-container .project-content .project-button-container {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .wrapper .projects .project-container .content-container .project-content .project-button-container button {
+    margin: 0;
+    margin-right: 20px;
+    height: 30px;
+    width: 20%;
   }
 }
 /*# sourceMappingURL=style.css.map */

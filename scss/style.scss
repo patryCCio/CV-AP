@@ -211,26 +211,42 @@ ul {
             text-align: center;
         }
         .project-container{
-            width: 90vw;
+            width: 75vw;
             margin: auto;
+            position: relative;
             border-radius: 10px;
             box-shadow: 0 0 2px 1px gray;
             padding: 20px 15px;
             display: flex;
             flex-direction: column;
+            .left-arrow, .right-arrow{
+                position: absolute;
+                top: 30%;
+                transform: translateY(-50%);
+                font-size: 40px;
+                font-weight: bold;
+                color: royalblue;
+            }
+
+            .left-arrow{
+                left: 0;
+            }
+
+            .right-arrow{
+                right: 0;
+            }
             .img-container{
-                width: 80vw;
-                height: 80vw;
+                width: 90%;
+                height: 30vw;
                 margin: auto;
                 box-shadow: 0 0 2px 1px gray;
                 margin-bottom: 20px;
             }
             .content-container{
-                width: 80vw;
+                width: 90%;
                 padding: 20px 15px;
                 margin: auto;
                 box-shadow: 0 0 2px 1px gray;
-                margin-bottom: 20px;
                 text-align: justify;
                 h2{
                     margin-bottom: 20px;
@@ -242,19 +258,26 @@ ul {
                     p{
                         margin-bottom: 10px;
                     }
-                    button{
-                        width: 50vw;
-                        margin-left: auto;
-                        margin-right: auto;
-                        background-color: royalblue;
-                        color: white;
-                        border: none;
-                        height: 35px;
-                        text-transform: uppercase;
-                        font-weight: bold;
-                        border-radius: 5px;
-                        margin-top: 10px;
-                        margin-bottom: 10px;
+                    .project-button-container{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin-top: 20px;
+                        button{
+                            width: 50vw;
+                            margin-left: auto;
+                            margin-right: auto;
+                            background-color: royalblue;
+                            color: white;
+                            border: none;
+                            height: 35px;
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            border-radius: 5px;
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                        }
                     }
                 }
             }
@@ -356,7 +379,6 @@ ul {
                             font-size: 0.8em;
                         }
 
-                        .nav-li:hover {}
                     }
 
                 }
@@ -437,7 +459,6 @@ ul {
                             font-size: 0.8em;
                         }
 
-                        .nav-li:hover {}
                     }
 
                 }
@@ -495,12 +516,6 @@ ul {
                         top: -125px;
                         left: 50%;
                     }
-
-                    .card-header {}
-
-                    .card-content {}
-
-                    .card-footer {}
                 }
 
             }
@@ -511,9 +526,21 @@ ul {
                 font-size: 3em;
             }
             .project-container{
+                .left-arrow, .right-arrow{
+                    top: 50%;
+                    font-size: 80px;
+                }
+    
+                .left-arrow{
+                    left: 10px;
+                }
+    
+                .right-arrow{
+                    right: 10px;
+                }
                 .img-container{
-                    width: 80vw;
-                    height: 40vw;
+                    width: 90%;
+                    height: 20vw;
                     margin-bottom: 0;
                 }
                 .content-container{
@@ -526,11 +553,17 @@ ul {
                             margin-bottom: 20px;
                             font-size: 1.2em;
                         }
-                        button{
-                            height: 25px;
-                            margin-left: 0;
-                            width: 25%;
+                        .project-button-container{
+                            width: 100%;
+                            flex-direction: row;
+                            button{
+                                margin: 0;
+                                margin-right: 20px;
+                                height: 30px;
+                                width: 20%;
+                            }
                         }
+                        
                     }
                 }
                 
