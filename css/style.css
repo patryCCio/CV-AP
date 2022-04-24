@@ -216,6 +216,81 @@ ul {
   margin-right: 50px;
 }
 
+.wrapper .projects .project-name {
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.wrapper .projects .project-container {
+  width: 90vw;
+  margin: auto;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 2px 1px gray;
+          box-shadow: 0 0 2px 1px gray;
+  padding: 20px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper .projects .project-container .img-container {
+  width: 80vw;
+  height: 80vw;
+  margin: auto;
+  -webkit-box-shadow: 0 0 2px 1px gray;
+          box-shadow: 0 0 2px 1px gray;
+  margin-bottom: 20px;
+}
+
+.wrapper .projects .project-container .content-container {
+  width: 80vw;
+  padding: 20px 15px;
+  margin: auto;
+  -webkit-box-shadow: 0 0 2px 1px gray;
+          box-shadow: 0 0 2px 1px gray;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.wrapper .projects .project-container .content-container h2 {
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.wrapper .projects .project-container .content-container .project-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper .projects .project-container .content-container .project-content p {
+  margin-bottom: 10px;
+}
+
+.wrapper .projects .project-container .content-container .project-content button {
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: royalblue;
+  color: white;
+  border: none;
+  height: 35px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .wrapper .title-section-container {
   width: 100%;
   display: -webkit-box;
@@ -381,6 +456,27 @@ ul {
     height: 250px;
     top: -125px;
     left: 50%;
+  }
+  .wrapper .projects .project-name {
+    font-size: 3em;
+  }
+  .wrapper .projects .project-container .img-container {
+    width: 80vw;
+    height: 40vw;
+    margin-bottom: 0;
+  }
+  .wrapper .projects .project-container .content-container h2 {
+    margin-bottom: 40px;
+    font-size: 2em;
+  }
+  .wrapper .projects .project-container .content-container .project-content p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  .wrapper .projects .project-container .content-container .project-content button {
+    height: 25px;
+    margin-left: 0;
+    width: 25%;
   }
 }
 /*# sourceMappingURL=style.css.map */

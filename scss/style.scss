@@ -204,7 +204,63 @@ ul {
     }
 
     // projects
-
+    .projects{
+        .project-name{
+            text-transform: uppercase;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+        .project-container{
+            width: 90vw;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 2px 1px gray;
+            padding: 20px 15px;
+            display: flex;
+            flex-direction: column;
+            .img-container{
+                width: 80vw;
+                height: 80vw;
+                margin: auto;
+                box-shadow: 0 0 2px 1px gray;
+                margin-bottom: 20px;
+            }
+            .content-container{
+                width: 80vw;
+                padding: 20px 15px;
+                margin: auto;
+                box-shadow: 0 0 2px 1px gray;
+                margin-bottom: 20px;
+                text-align: justify;
+                h2{
+                    margin-bottom: 20px;
+                    font-weight: normal;
+                }
+                .project-content{
+                    display: flex;
+                    flex-direction: column;
+                    p{
+                        margin-bottom: 10px;
+                    }
+                    button{
+                        width: 50vw;
+                        margin-left: auto;
+                        margin-right: auto;
+                        background-color: royalblue;
+                        color: white;
+                        border: none;
+                        height: 35px;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        border-radius: 5px;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            
+        }
+    }
     // opinions
 
     // contact
@@ -447,6 +503,37 @@ ul {
                     .card-footer {}
                 }
 
+            }
+        }
+
+        .projects{
+            .project-name{
+                font-size: 3em;
+            }
+            .project-container{
+                .img-container{
+                    width: 80vw;
+                    height: 40vw;
+                    margin-bottom: 0;
+                }
+                .content-container{
+                    h2{
+                        margin-bottom: 40px;
+                        font-size: 2em;
+                    }
+                    .project-content{
+                        p{
+                            margin-bottom: 20px;
+                            font-size: 1.2em;
+                        }
+                        button{
+                            height: 25px;
+                            margin-left: 0;
+                            width: 25%;
+                        }
+                    }
+                }
+                
             }
         }
     }
