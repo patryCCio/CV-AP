@@ -20,10 +20,18 @@ body{
     background-color: var(--background);
 }
 
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
 ul {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+textarea{
+    resize: none;
 }
 
 .main-container {
@@ -445,6 +453,7 @@ ul {
             color: white;
             padding: 20px 0;
             background-color: rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 60px 1px black;
             text-align: center;
             h3, h1{
                 text-transform: uppercase;
@@ -479,12 +488,34 @@ ul {
                 margin-bottom: 30px;
             }
 
+            input, textarea{
+                transition: .3s;
+                font-size: 1em;
+                color: white;
+            }
+
+            input:focus{
+                border-bottom: 2px solid var(--third-color);
+                color: white;
+                background-color: rgba(0, 0, 0, 0.6);
+            }
+
+            textarea:focus{
+                border: 2px solid var(--third-color);
+                color: white;
+                background-color: rgba(0, 0, 0, 0.6);
+            }
+
+
             textarea{
                 margin-bottom: 10px;
                 margin-left: auto;
                 margin-right: auto;
-                min-width: 280px;
-                max-width: 600px;
+                width: 80%;
+                padding: 10px;
+                border: 2px solid var(--second-color);
+                background-color: transparent;
+                border-radius: 5px;
             }
 
             label{
@@ -497,8 +528,12 @@ ul {
                 height: 35px;
                 margin-left: auto;
                 margin-right: auto;
-                min-width: 280px;
-                max-width: 600px;
+                width: 80%;
+                padding: 10px;
+                border: none;
+                border-bottom: 2px solid var(--second-color);
+                background-color: transparent;
+                border-radius: 5px;
             }
 
             form{
@@ -643,6 +678,30 @@ ul {
                 }
 
             }
+
+            .contact{
+                background-image: url('../img/contact-small.jpg');
+                min-height: 100vh;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                position: relative;
+        
+                .contact-container{
+                    
+                    textarea{
+                        
+                    }
+        
+                    label{
+                        
+                    }
+        
+                    input{
+                        
+                    }
+                }
+            }
         }
 
 
@@ -667,7 +726,7 @@ ul {
 
 }
 
-@media(min-width: 320px) and (max-width: 480px) {
+@media(min-width: 320px) and (max-width: 660px) {
     .wrapper {
         .header-container {
             .top-header {
@@ -760,6 +819,18 @@ ul {
         .opinions{
             .opinions-container{
                 width: 95%;
+            }
+        }
+
+        .contact{
+            .contact-container{
+                textarea{
+                    width: 95%;
+                }
+    
+                input{
+                    width: 95%;
+                }
             }
         }
     }
@@ -863,11 +934,13 @@ ul {
                 flex-direction: row;
                 align-items: center;
                 justify-content: space-evenly;
-                input{
-                    width: 600px;
+                label{
+                    margin-bottom: 10px;
+                    font-size: 1.2em;
                 }
-                textarea{
-                    width: 600px;
+                input, textarea{
+                    width: 70%;
+                    margin-bottom: 30px;
                 }
                 .left-container, .right-container{
                     padding-left: 60px;
